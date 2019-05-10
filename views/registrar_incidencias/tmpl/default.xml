@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_INCIDENCIA_TITLE_LIST_VIEW_REGISTRAR_INCIDENCIAS" option="View">
+        <message>
+                        <![CDATA[COM_INCIDENCIA_TITLE_LIST_VIEW_REGISTRAR_INCIDENCIAS_DESC]]>
+        </message>
+	</layout>
+</metadata>
