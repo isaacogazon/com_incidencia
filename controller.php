@@ -17,7 +17,7 @@ jimport('joomla.application.component.controller');
  *
  * @since  1.6
  */
-class IncidenciaController extends JControllerLegacy 
+class IncidenciaController extends JControllerLegacy
 {
 	/**
 	 * Method to display a view.
