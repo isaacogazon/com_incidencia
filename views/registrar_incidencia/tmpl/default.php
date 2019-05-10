@@ -24,7 +24,7 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 		
 		<tr>
 			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_FECHA'); ?></th>
-			<td><?php echo $this->item->fecha; ?></td>
+			<td><?php echo date("d/m/Y", strtotime($this->item->fecha)); ?></td>
 		</tr>
 
 		<tr>

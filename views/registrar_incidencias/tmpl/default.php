@@ -88,7 +88,7 @@ $canDelete  = $user->authorise('core.delete', 'com_incidencia');
 
 								<td>
 
-					<?php echo $item->fechafin; ?>
+					<?php echo date("d/m/Y H:m", strtotime($item->fechafin)); ?>
 				</td>
 				<td>
 				<?php if (isset($item->checked_out) && $item->checked_out) : ?>
