@@ -20,11 +20,16 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 
 <div class="item_fields">
 
-	<table class="table">
+	<table class="table table-hover">
 		
 		<tr>
 			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_FECHA'); ?></th>
 			<td><?php echo date("d/m/Y", strtotime($this->item->fecha)); ?></td>
+		</tr>
+
+		<tr>
+			<th><?php echo JText::_('Fecha finalización'); ?></th>
+			<td><?php echo date("d/m/Y", strtotime($this->item->fechafin)); ?></td>
 		</tr>
 
 		<tr>
@@ -63,7 +68,7 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CREATED_BY'); ?></th>
+			<th><?php echo JText::_('Incidencia creada por');//COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CREATED_BY ?></th>
 			<td><?php echo $this->item->created_by_name; ?></td>
 		</tr>
 
@@ -73,14 +78,14 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 
 <?php if($canEdit && $canDelete): ?>
 
-	<a class="btn" href="<?php echo JRoute::_('index.php?option=com_incidencia&task=registrar_incidencia.edit&id='.$this->item->id); ?>"><?php echo JText::_("COM_INCIDENCIA_EDIT_ITEM"); ?></a>
+	<a class="btn" href="<?php echo JRoute::_('index.php?option=com_incidencia&task=registrar_incidencia.edit&id='.$this->item->id); ?>"><?php echo JText::_("Editar"); ?></a>
 
 <?php endif; ?>
 
 <?php if (JFactory::getUser()->authorise('core.delete','com_incidencia.registrar_incidencia.'.$this->item->id)) : ?>
 
 	<a class="btn btn-danger" href="#deleteModal" role="button" data-toggle="modal">
-		<?php echo JText::_("COM_INCIDENCIA_DELETE_ITEM"); ?>
+		<?php echo JText::_("Borrar incidencia"); ?>
 	</a>
 
 	<div id="deleteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">

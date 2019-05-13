@@ -14,7 +14,7 @@ JHtml::_('behavior.tooltip');
 JHtml::_('behavior.formvalidation');
 JHtml::_('formbehavior.chosen', 'select');
 
-JHtml::script('incidencias/media/jui/js/javascript.js');//incidencias/components/com_incidencia/helpers/javascript.js
+//JHtml::script('incidencias/media/jui/js/javascript.js');//incidencias/components/com_incidencia/helpers/javascript.js
 JHtml::script('https://momentjs.com/downloads/moment-with-locales.js');
 JHtml::script('https://momentjs.com/downloads/moment.min.js');
 JHtml::script('https://code.jquery.com/jquery-3.4.1.min.js');
@@ -26,6 +26,7 @@ $lang = JFactory::getLanguage();
 $lang->load('com_incidencia', JPATH_SITE);
 $doc = JFactory::getDocument();
 $doc->addScript(JUri::base() . '/media/com_incidencia/js/form.js');
+$doc->addScript(JUri::base() . '/media/com_incidencia/js/javascript.js');
 
 $user    = JFactory::getUser();
 $canEdit = IncidenciaHelpersIncidencia::canUserEdit($this->item, $user);
