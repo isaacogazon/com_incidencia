@@ -11,15 +11,15 @@
     <field name="curso" required="true" message="Introduzca el curso donde se encontraba." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CURSO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_CURSO" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CURSO"/>
     <field name="descripcion" filter="safehtml" type="textarea" required="true" message="En campo descripción debe ser obligatorio." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_DESCRIPCION" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_DESCRIPCION" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_DESCRIPCION"/>
     <field name="tipo" type="combo" required="true" message="Introduzca tipo de avería." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_TIPO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_TIPO" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_TIPO">
-      <option value="0">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_TIPO_OPTION_0</option>
-      <option value="1">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_TIPO_OPTION_1</option>
-      <option value="2">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_TIPO_OPTION_2</option>
-      <option value="3">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_TIPO_OPTION_3</option>
+      <option value="0">Problema software</option>
+      <option value="1">Problema hardware</option>
+      <option value="2">Componente imperfecto</option>
+      <option value="3">Ninguna de las anteriores</option>
     </field>
     <field name="estado" type="combo" label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ESTADO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_ESTADO"  hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ESTADO"><!-- hidden="true" -->
-      <option value="recibido">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_ESTADO_OPTION_RECIBIDO</option>
-      <option value="tratamiento">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_ESTADO_OPTION_TRATAMIENTO</option>
-      <option value="resuelto">COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_ESTADO_OPTION_RESUELTO</option>
+      <option value="recibido">Recibido</option>
+      <option value="tratamiento">En tratamiento</option>
+      <option value="resuelto">Resuelto</option>
     </field>
     <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
   </fieldset>

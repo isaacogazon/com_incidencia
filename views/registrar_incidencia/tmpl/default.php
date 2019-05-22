@@ -59,7 +59,7 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 
 		<tr>
 			<th><?php echo 'Descripción' ?></th>
-			<td><?php echo nl2br($this->item->descripcion); ?></td>
+			<td><?php echo $this->item->descripcion; ?></td>
 		</tr>
 
 		<tr>
@@ -74,9 +74,7 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 
 	</table>
 
-</div>
-
-<?php if($canEdit && $canDelete): ?>
+	<?php if($canEdit && $canDelete): ?>
 
 	<a class="btn" href="<?php echo JRoute::_('index.php?option=com_incidencia&task=registrar_incidencia.edit&id='.$this->item->id); ?>"><?php echo JText::_("Editar"); ?></a>
 
@@ -87,8 +85,10 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 	<a class="btn btn-danger" href="#deleteModal" role="button" data-toggle="modal">
 		<?php echo ("Borrar incidencia"); ?>
 	</a>
+	
+<?php endif; ?>
 
-	<div id="deleteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			<h3><?php echo JText::_('COM_INCIDENCIA_DELETE_ITEM'); ?></h3>
@@ -104,4 +104,7 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 		</div>
 	</div>
 
-<?php endif; ?>
+</div>
+
+
+
