@@ -142,7 +142,7 @@ class IncidenciaControllerRegistrar_incidenciaForm extends JControllerForm
 		$app->setUserState('com_incidencia.edit.registrar_incidencia.id', null);
 
 		// Redirect to the list screen.
-		$this->setMessage(JText::_('COM_INCIDENCIA_ITEM_SAVED_SUCCESSFULLY'));
+		$this->setMessage('Incidencia guardada con éxito.');
 		$menu = JFactory::getApplication()->getMenu();
 		$item = $menu->getActive();
 		$url  = (empty($item->link) ? 'index.php?option=com_incidencia&view=registrar_incidencias' : $item->link);
@@ -212,7 +212,7 @@ class IncidenciaControllerRegistrar_incidenciaForm extends JControllerForm
             $url = (empty($item->link) ? 'index.php?option=com_incidencia&view=registrar_incidencias' : $item->link);
 
             // Redirect to the list screen
-            $this->setMessage(JText::_('COM_EXAMPLE_ITEM_DELETED_SUCCESSFULLY'));
+            $this->setMessage('Incidencia borrada con éxito.');
             $this->setRedirect(JRoute::_($url, false));
 
             // Flush the data from the session.

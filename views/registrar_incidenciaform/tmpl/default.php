@@ -85,13 +85,13 @@ $canEdit = IncidenciaHelpersIncidencia::canUserEdit($this->item, $user);
 
 					<?php if ($this->canSave): ?>
 						<button type="submit" class="validate btn btn-primary">
-							<?php echo JText::_('JSUBMIT'); ?>
+							<?php echo 'Enviar'; ?>
 						</button>
 					<?php endif; ?>
 					<a class="btn"
 					   href="<?php echo JRoute::_('index.php?option=com_incidencia&task=registrar_incidenciaform.cancel'); ?>"
-					   title="<?php echo JText::_('JCANCEL'); ?>">
-						<?php echo JText::_('JCANCEL'); ?>
+					   title="<?php echo 'Cancelar'; ?>">
+						<?php echo 'Cancelar'; ?>
 					</a>
 				</div>
 			</div>

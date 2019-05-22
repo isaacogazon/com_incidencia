@@ -23,52 +23,52 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 	<table class="table table-hover">
 		
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_FECHA'); ?></th>
+			<th><?php echo 'Fecha' ?></th>
 			<td><?php echo date("d/m/Y", strtotime($this->item->fecha)); ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('Fecha finalización'); ?></th>
+			<th><?php echo 'Fecha finalización' ?></th>
 			<td><?php echo date("d/m/Y", strtotime($this->item->fechafin)); ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_EQUIPO'); ?></th>
+			<th><?php echo 'Equipo' ?></th>
 			<td><?php echo $this->item->equipo; ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_AULA'); ?></th>
+			<th><?php echo 'Aula' ?></th>
 			<td><?php echo $this->item->aula; ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_PROFESOR'); ?></th>
+			<th><?php echo 'Profesor' ?></th>
 			<td><?php echo $this->item->profesor; ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ALUMNO'); ?></th>
+			<th><?php echo 'Alumno' ?></th>
 			<td><?php echo $this->item->alumno; ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CURSO'); ?></th>
+			<th><?php echo 'Curso' ?></th>
 			<td><?php echo $this->item->curso; ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_DESCRIPCION'); ?></th>
+			<th><?php echo 'Descripción' ?></th>
 			<td><?php echo nl2br($this->item->descripcion); ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_TIPO'); ?></th>
+			<th><?php echo 'Tipo' ?></th>
 			<td><?php echo $this->item->tipo; ?></td>
 		</tr>
 
 		<tr>
-			<th><?php echo JText::_('Incidencia creada por');//COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CREATED_BY ?></th>
+			<th><?php echo 'Incidencia creada por' ?></th>
 			<td><?php echo $this->item->created_by_name; ?></td>
 		</tr>
 
@@ -85,7 +85,7 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 <?php if (JFactory::getUser()->authorise('core.delete','com_incidencia.registrar_incidencia.'.$this->item->id)) : ?>
 
 	<a class="btn btn-danger" href="#deleteModal" role="button" data-toggle="modal">
-		<?php echo JText::_("Borrar incidencia"); ?>
+		<?php echo ("Borrar incidencia"); ?>
 	</a>
 
 	<div id="deleteModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">

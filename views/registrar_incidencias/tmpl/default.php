@@ -40,25 +40,25 @@ $canDelete  = $user->authorise('core.delete', 'com_incidencia');
 				<?php echo JHtml::_('grid.sort',  'Fecha fin', 'a.fechafin', $listDirn, $listOrder); ?>
 				</th>
 				<th class=''>
-				<?php echo JHtml::_('grid.sort',  'COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_EQUIPO', 'a.equipo', $listDirn, $listOrder); ?>
+				<?php echo JHtml::_('grid.sort',  'Equipo', 'a.equipo', $listDirn, $listOrder); ?>
 				</th>
 				<th class=''>
-				<?php echo JHtml::_('grid.sort',  'COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_AULA', 'a.aula', $listDirn, $listOrder); ?>
+				<?php echo JHtml::_('grid.sort',  'Aula', 'a.aula', $listDirn, $listOrder); ?>
 				</th>
 				<th class=''>
-				<?php echo JHtml::_('grid.sort',  'COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_TIPO', 'a.tipo', $listDirn, $listOrder); ?>
+				<?php echo JHtml::_('grid.sort',  'Tipo', 'a.tipo', $listDirn, $listOrder); ?>
 				</th>
 				<th class=''>
-				<?php echo JHtml::_('grid.sort',  'COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_ESTADO', 'a.estado', $listDirn, $listOrder); ?>
+				<?php echo JHtml::_('grid.sort',  'Estado', 'a.estado', $listDirn, $listOrder); ?>
 				</th>
 				<th class=''>
-				<?php echo JHtml::_('grid.sort',  'COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_CREATED_BY', 'a.created_by', $listDirn, $listOrder); ?>
+				<?php echo JHtml::_('grid.sort',  'Creado por', 'a.created_by', $listDirn, $listOrder); ?>
 				</th>
 
 
 							<?php if ($canEdit || $canDelete): ?>
 					<th class="center">
-				<?php echo JText::_('COM_INCIDENCIA_REGISTRAR_INCIDENCIAS_ACTIONS'); ?>
+				<?php echo 'Opciones'; ?>
 				</th>
 				<?php endif; ?>
 
@@ -145,7 +145,7 @@ $canDelete  = $user->authorise('core.delete', 'com_incidencia');
 		<a href="<?php echo JRoute::_('index.php?option=com_incidencia&task=registrar_incidenciaform.edit&id=0', false, 0); ?>"
 		   class="btn btn-success btn-small"><i
 				class="icon-plus"></i>
-			<?php echo ('Añadir nueva incidencia')/*JText::_('COM_INCIDENCIA_ADD_ITEM')*/; ?></a>
+			<?php echo ('Añadir nueva incidencia'); ?></a>
 	<?php endif; ?>
 
 	<input type="hidden" name="task" value=""/>
@@ -164,7 +164,7 @@ $canDelete  = $user->authorise('core.delete', 'com_incidencia');
 
 	function deleteItem() {
 
-	if (!confirm("<?php echo('¿Estás seguro que querer borrar ésta incidencia?')/*JText::_('COM_INCIDENCIA_DELETE_MESSAGE')*/; ?>")) {
+	if (!confirm("<?php echo('¿Estás seguro que querer borrar ésta incidencia?'); ?>")) {
 			return false;
 		}
 	}
