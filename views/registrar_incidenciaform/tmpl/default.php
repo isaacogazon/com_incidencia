@@ -37,7 +37,7 @@ $canEdit = IncidenciaHelpersIncidencia::canUserEdit($this->item, $user);
 <div class="registrar_incidencia-edit front-end-edit">
 	<?php if (!$canEdit) : ?>
 		<h3>
-			<?php throw new Exception(JText::_('COM_INCIDENCIA_ERROR_MESSAGE_NOT_AUTHORISED'), 403); ?>
+			<?php throw new Exception(JText::_('No autorizado'), 403); ?>
 		</h3>
 	<?php else : ?>
 		<?php if (!empty($this->item->id)): ?>

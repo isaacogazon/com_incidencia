@@ -28,7 +28,7 @@ $canDelete  = $user->authorise('core.delete', 'com_incidencia');
 <form action="<?php echo htmlspecialchars(JUri::getInstance()->toString()); ?>" method="post"
       name="adminForm" id="adminForm">
 
-	<?php echo JLayoutHelper::render('default_filter', array('view' => $this), dirname(__FILE__)); ?>
+	<?php echo JLayoutHelper::render('filter_search', array('view' => $this), dirname(__FILE__)); ?>
 	<table class="table table-striped" id="registrar_incidenciaList">
 		<thead>
 		<tr>

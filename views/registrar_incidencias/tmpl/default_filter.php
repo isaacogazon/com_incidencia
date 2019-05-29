@@ -74,29 +74,29 @@ JHtml::_('searchtools.form', $formSelector, $data['options']);
 	<div class="clearfix">
 		<div class="js-stools-container-bar">
 			<label for="filter_search" class="element-invisible"
-				aria-invalid="false"><?php echo JText::_('COM_INCIDENCIA_SEARCH_FILTER_SUBMIT'); ?></label>
+				aria-invalid="false"><?php echo JText::_(''); ?></label>
 
 			<div class="btn-wrapper input-append">
 				<?php echo $search_filter->input; ?>
 				<button type="submit" class="btn hasTooltip" title=""
-					data-original-title="<?php echo JText::_('COM_INCIDENCIA_SEARCH_FILTER_SUBMIT'); ?>">
+					data-original-title="<?php echo JText::_(''); ?>">
 					<i class="icon-search"></i>
 				</button>
 			</div>
 			<?php if ($filters): ?>
 				<div class="btn-wrapper hidden-phone">
 					<button type="button" class="btn hasTooltip js-stools-btn-filter" title=""
-						data-original-title="<?php echo JText::_('COM_INCIDENCIA_SEARCH_TOOLS_DESC'); ?>">
-						<?php echo JText::_('COM_INCIDENCIA_SEARCH_TOOLS'); ?> <i class="caret"></i>
+						data-original-title="<?php echo JText::_(''); ?>">
+						<?php echo JText::_(''); ?> <i class="caret"></i>
 					</button>
 				</div>
 			<?php endif; ?>
 
 			<div class="btn-wrapper">
 				<button type="button" class="btn hasTooltip js-stools-btn-clear" title=""
-					data-original-title="<?php echo JText::_('COM_INCIDENCIA_SEARCH_FILTER_CLEAR'); ?>"
+					data-original-title="<?php echo JText::_(''); ?>"
 					onclick="jQuery(this).closest('form').find('input').val('');">
-					<?php echo JText::_('COM_INCIDENCIA_SEARCH_FILTER_CLEAR'); ?>
+					<?php echo JText::_(''); ?>
 				</button>
 			</div>
 		</div>

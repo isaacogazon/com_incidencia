@@ -91,15 +91,15 @@ if (!$canEdit && JFactory::getUser()->authorise('core.edit.own', 'com_incidencia
 	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModal" aria-hidden="true">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			<h3><?php echo JText::_('COM_INCIDENCIA_DELETE_ITEM'); ?></h3>
+			<h3><?php echo JText::_('Borrar'); ?></h3>
 		</div>
 		<div class="modal-body">
-			<p><?php echo JText::sprintf('COM_INCIDENCIA_DELETE_CONFIRM', $this->item->id); ?></p>
+			<p><?php echo JText::sprintf('Corfirmar', $this->item->id); ?></p>
 		</div>
 		<div class="modal-footer">
 			<button class="btn" data-dismiss="modal">Close</button>
 			<a href="<?php echo JRoute::_('index.php?option=com_incidencia&task=registrar_incidencia.remove&id=' . $this->item->id, false, 2); ?>" class="btn btn-danger">
-				<?php echo JText::_('COM_INCIDENCIA_DELETE_ITEM'); ?>
+				<?php echo JText::_('Borrar'); ?>
 			</a>
 		</div>
 	</div>

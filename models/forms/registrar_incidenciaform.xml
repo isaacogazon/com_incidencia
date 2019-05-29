@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
   <fieldset>
-    <field name="id" type="text" readonly="true" class="readonly" default="0" description="JGLOBAL_FIELD_ID_DESC"/>
-    <field name="fecha" type="calendar" format="%d-%m-%Y %H:%M:%S" showtime="true" filter="user_utc" required="true" message="Introduzca una fecha." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_FECHA" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_FECHA" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_FECHA"/>
+    <field name="id" type="text" readonly="true" class="readonly" default="0" description="ID"/>
+    <field name="fecha" type="calendar" format="%d-%m-%Y %H:%M:%S" showtime="true" filter="user_utc" required="true" message="Introduzca una fecha." label="Fecha" description="Fecha" hint="Fecha"/>
     <field name="fechafin" type="text" showtime="true" filter="user_utc"  label="Fecha fin(Aproximada)" description="Fecha fin(Aproximada)" hint="Fecha fin(Aproximada)"/>
-    <field name="equipo" required="true" message="Introduzca el numero del equipo." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_EQUIPO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_EQUIPO" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_EQUIPO"/>
-    <field name="aula" required="true" message="Introduzca el aula." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_AULA" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_AULA" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_AULA"/>
-    <field name="profesor" required="true" message="Introduzca el nombre del profesor que se encontraba en el lugar." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_PROFESOR" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_PROFESOR" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_PROFESOR"/>
-    <field name="alumno" required="true" message="Introduzca el alumno que estaba en el lugar de la avería." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ALUMNO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_ALUMNO" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ALUMNO"/>
-    <field name="curso" required="true" message="Introduzca el curso donde se encontraba." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CURSO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_CURSO" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_CURSO"/>
-    <field name="descripcion" filter="safehtml" type="textarea" required="true" message="En campo descripción debe ser obligatorio." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_DESCRIPCION" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_DESCRIPCION" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_DESCRIPCION"/>
-    <field name="tipo" type="combo" required="true" message="Introduzca tipo de avería." label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_TIPO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_TIPO" hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_TIPO">
+    <field name="equipo" required="true" message="Introduzca el numero del equipo." label="Equipo" description="Equipo" hint="Equipo"/>
+    <field name="aula" required="true" message="Introduzca el aula." label="Aula" description="Aula" hint="Aula"/>
+    <field name="profesor" required="true" message="Introduzca el nombre del profesor que se encontraba en el lugar." label="Profesor" description="Profesor" hint="Profesor"/>
+    <field name="alumno" required="true" message="Introduzca el alumno que estaba en el lugar de la avería." label="Alumno" description="Alumno" hint="Alumno"/>
+    <field name="curso" required="true" message="Introduzca el curso donde se encontraba." label="Curso" description="Curso" hint="Curso"/>
+    <field name="descripcion" filter="safehtml" type="textarea" required="true" message="En campo descripción debe ser obligatorio." label="Descripción" description="Descripción" hint="Descripción"/>
+    <field name="tipo" type="combo" required="true" message="Introduzca tipo de avería." label="Tipo" description="Tipo" hint="Tipo">
       <option value="0">Problema software</option>
       <option value="1">Problema hardware</option>
       <option value="2">Componente imperfecto</option>
       <option value="3">Ninguna de las anteriores</option>
     </field>
-    <field name="estado" type="combo" label="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ESTADO" description="COM_INCIDENCIA_FORM_DESC_REGISTRAR_INCIDENCIA_ESTADO"  hint="COM_INCIDENCIA_FORM_LBL_REGISTRAR_INCIDENCIA_ESTADO"><!-- hidden="true" -->
+    <field name="estado" type="combo" label="Estado" description="Estado"  hint="Estado"><!-- hidden="true" -->
       <option value="recibido">Recibido</option>
       <option value="tratamiento">En tratamiento</option>
       <option value="resuelto">Resuelto</option>
     </field>
-    <field name="version_note" type="text" label="JGLOBAL_FIELD_VERSION_NOTE_LABEL" description="JGLOBAL_FIELD_VERSION_NOTE_DESC" class="inputbox" size="45" labelclass="control-label"/>
+    <field name="version_note" type="text" label="Version" description="Version" class="inputbox" size="45" labelclass="control-label"/>
   </fieldset>
 </form>
