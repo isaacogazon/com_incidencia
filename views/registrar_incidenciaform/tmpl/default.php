@@ -57,7 +57,7 @@ $canEdit = IncidenciaHelpersIncidencia::canUserEdit($this->item, $user);
 	<?php $this->form->setValue('fecha',null,date('d-m-Y H:i:s'));?>
 	<?php echo $this->form->renderField('fecha');?>
 
-	<?php //$this->form->setValue('fechafin',null);?>
+	<?php /*$this->form->setValue('fechafin',null,date('d-m-Y H:i:s'));*/?>
 	<?php echo $this->form->renderField('fechafin');?>
 	
 	<?php echo $this->form->renderField('equipo'); ?>

@@ -3,7 +3,7 @@
   <fieldset>
     <field name="id" type="text" readonly="true" class="readonly" default="0" description="ID"/>
     <field name="fecha" type="calendar" format="%d-%m-%Y %H:%M:%S" showtime="true" filter="user_utc" required="true" message="Introduzca una fecha." label="Fecha" description="Fecha" hint="Fecha"/>
-    <field name="fechafin" type="text" showtime="true" filter="user_utc"  label="Fecha fin(Aproximada)" description="Fecha fin(Aproximada)" hint="Fecha fin(Aproximada)"/>
+    <field name="fechafin" type="text" showtime="true" filter="user_utc" required="true" label="Fecha fin(Aproximada)" description="Fecha fin(Aproximada)" hint="Fecha fin(Aproximada)"/>
     <field name="equipo" required="true" message="Introduzca el numero del equipo." label="Equipo" description="Equipo" hint="Equipo"/>
     <field name="aula" required="true" message="Introduzca el aula." label="Aula" description="Aula" hint="Aula"/>
     <field name="profesor" required="true" message="Introduzca el nombre del profesor que se encontraba en el lugar." label="Profesor" description="Profesor" hint="Profesor"/>
